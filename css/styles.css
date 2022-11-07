@@ -1,0 +1,148 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/*Classe centralizadora - linha*/
+.centeredRow{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+/*Classe centralizadora - coluna*/
+.centeredColumn{
+     display: flex !important;
+     align-items: center !important;
+     justify-content: center !important;
+     flex-direction: column !important;
+}
+
+/*Barra de navegação*/
+.nav{
+     background-color: #4775d1;
+}
+
+.nav-link:hover{
+     background-color: #5f87d6;
+}
+
+/*Página principal do site*/
+.coverSite{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 85vh !important;
+}
+
+.coverSite i{
+     color: grey;
+     font-size: x-large;
+}
+
+.coverSite img{
+     max-width: 50vw;
+     width: 100%;
+}
+
+.coverSitePhrase{
+     display: flex;
+     flex-direction: column;
+}
+
+#btnInfo{
+     border-radius: 8px !important;
+     max-width: fit-content !important;
+     padding: 8px !important;
+}
+
+/*Serviços oferecidos*/
+.services{
+     width: auto;
+     min-height:fit-content;
+}
+.cardService{
+     width: 18rem;
+     height: 25rem;
+     border: .25px solid rgb(238, 233, 233);
+     border-radius: 6px;
+     margin-left: 20px;
+}
+
+.cardService:hover{
+     transform: scale(1.1);
+     transition: all 0.4s;
+}
+
+/*Rodapé*/
+.siteFooter{
+     background-color: #4775d1;
+     min-height: 15vh;
+     max-width: 100vw;
+}
+
+.midias{
+     cursor: pointer;
+     font-size: 1.4rem;
+}
+
+.midiaAlinhamento{
+     margin-top: 40px;
+     padding: 25px;
+     text-align: center;
+     color: white;
+}
+
+.credits{
+     display: flex !important;
+     align-items: center !important;
+     justify-content: center !important;
+     flex-direction: column;
+}
+
+.credits a{
+     color: white;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+     .coverSite{
+          display: flex;
+          max-width: 100vw;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+     }
+     .coverSiteImg img{
+          max-width: 100%;
+          width: 100vw;
+     }
+     .coverSitePhrase h1{
+          font-size: 1.5rem;
+          text-align: center !important;
+     }
+     .coverSitePhrase button{
+          display: block;
+          margin: auto;
+          min-width: fit-content;
+          padding: 10px !important;
+     }
+     .services{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+     }
+     .cardService{
+          margin-top: 20px;
+          margin-bottom: 20px;
+     }
+
+
+}
