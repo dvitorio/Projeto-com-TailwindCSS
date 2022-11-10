@@ -1,31 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;800&display=swap');
+
 *{
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     font-family: 'Exo', sans-serif;
+}
+
+/*Tela preta (black screen)*/
+.blackScreen{
+     background-color: rgba(0, 0, 0, 0.636) !important;
+     display: flex;
+     height: 100vh !important;
+     left: 0 !important;
+     position: absolute !important;
+     top: 0 !important;
+     width: 100vw !important;
+     z-index: 2 !important;
+     transition: all 0.4s;
 }
 
 /*Classe centralizadora - linha*/
 .centeredRow{
-     display: flex;
      align-items: center;
+     display: flex;
      justify-content: center;
 }
 
 /*Classe centralizadora - coluna*/
 .centeredColumn{
-     display: flex !important;
      align-items: center !important;
-     justify-content: center !important;
+     display: flex !important;
      flex-direction: column !important;
+     justify-content: center !important;
 }
 
 /*Barra de navegação*/
-.nav{
-     background-color: #4775d1;
-}
 
-.nav-link:hover{
-     background-color: #5f87d6;
+.nav-item button:hover{
+     border-radius: 5px;
+     cursor: pointer !important;
+     font-weight: 400 !important;
+     outline: 0;
 }
 
 /*Página principal do site*/
@@ -60,11 +76,11 @@
 /*Serviços oferecidos*/
 .services{
      width: auto;
-     min-height:fit-content;
+     min-height: fit-content;
 }
 .cardService{
      width: 18rem;
-     height: 25rem;
+     height: 32rem;
      border: .25px solid rgb(238, 233, 233);
      border-radius: 6px;
      margin-left: 20px;
@@ -73,6 +89,25 @@
 .cardService:hover{
      transform: scale(1.1);
      transition: all 0.4s;
+}
+
+.boxIMC{
+     display: flex;
+     flex-direction: column;
+     background-color: whitesmoke;
+     left: 50%;
+     min-height: fit-content;
+     position: absolute;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     width: 18rem;
+     z-index: 3;
+     border-radius: 8px;
+}
+
+.boxIMC i:hover{
+     color: darkred !important;
+     cursor: pointer !important;
 }
 
 /*Rodapé*/
@@ -101,7 +136,7 @@
      flex-direction: column;
 }
 
-.credits a{
+.credits button{
      color: white;
 }
 
