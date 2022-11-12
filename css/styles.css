@@ -11,13 +11,13 @@
 .blackScreen{
      background-color: rgba(0, 0, 0, 0.636) !important;
      display: flex;
-     height: 100vh !important;
      left: 0 !important;
+     min-height: 200vh !important;
      position: absolute !important;
      top: 0 !important;
+     transition: all 0.4s;
      width: 100vw !important;
      z-index: 2 !important;
-     transition: all 0.4s;
 }
 
 /*Classe centralizadora - linha*/
@@ -92,22 +92,30 @@
 }
 
 .boxIMC{
+     animation: imc normal 0.5s;
+     background-color: whitesmoke;
+     border-radius: 8px;
      display: flex;
      flex-direction: column;
-     background-color: whitesmoke;
      left: 50%;
-     min-height: fit-content;
+     min-height: 25rem;
+     min-width: 18rem;
      position: absolute;
      top: 50%;
      transform: translate(-50%, -50%);
-     width: 18rem;
      z-index: 3;
-     border-radius: 8px;
 }
 
 .boxIMC i:hover{
      color: darkred !important;
      cursor: pointer !important;
+}
+
+.contact{
+     background-color: rgb(237, 224, 224);
+     border-radius: 10px;
+     border: .25px solid lightgrey;
+     height: 75vh;
 }
 
 /*Rodapé*/

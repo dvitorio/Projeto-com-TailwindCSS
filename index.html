@@ -1,142 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Nova NutriWeb</title>
-     <!--BOOTSTRAP-->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-     <!--PURE CSS-->
-     <link rel="stylesheet" href="css/styles.css">
-     <!--FONTAWESMOE-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova NutriWeb</title>
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--PURE CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <!--FONTAWESMOE-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-    <!--Tela preta-->
-    <div class="blackScreen d-none" id="blackScreen"></div>
-     
-    <!--NAVBAR (MENU)-->
-     <div class="bg-info nav navbar">
-      <div class="centeredRow logo">
-        <img src="/img/heartbeat.png" alt="Logotipo do site" width="45">
-        <h1 class="p-2 text-white text-shadow">NutriWeb</h1>
+  <!--Tela preta-->
+  <div class="blackScreen d-none" id="blackScreen"></div>
+
+  <!--NAVBAR (MENU)-->
+  <div class="bg-info nav navbar">
+    <div class="centeredRow logo">
+      <img src="/img/heartbeat.png" alt="Logotipo do site" width="45">
+      <h1 class="p-2 text-white text-shadow">NutriWeb</h1>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <button class="btn btn-info border-0 nav-link mr-5 pr-5 text-white text-center" href="#services">Serviços
+              <span class="sr-only">(Página atual)</span></button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-info border-0 nav-link mr-5 pr-5 text-white text-center" href="#">IAC</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-info border-0 nav-link mr-5 pr-5 text-white text-center" href="#"
+              id="btnIMC">IMC</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-info border-0 nav-link mr-5 pr-5 text-white text-center" href="#">RCQ</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-info border-0 nav-link mr-5 pr-5 text-white text-center" href="#">TFG</button>
+          </li>
+        </ul>
       </div>
-          
-          <nav class="navbar navbar-expand-lg navbar-light">
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-                 <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarNav">
-                 <ul class="navbar-nav mx-auto">
-                   <li class="nav-item active">
-                     <button class="btn btn-info border-0 nav-link mr-5 pr-5 text-white text-center" href="#services">Serviços <span class="sr-only">(Página atual)</span></button>
-                   </li>
-                   <li class="nav-item">
-                     <button class="btn btn-info border-0 nav-link mr-5 pr-5 text-white text-center" href="#">IAC</button>
-                   </li>
-                   <li class="nav-item">
-                     <button class="btn btn-info border-0 nav-link mr-5 pr-5 text-white text-center" href="#" id="btnIMC">IMC</button>
-                   </li>
-                   <li class="nav-item">
-                     <button class="btn btn-info border-0 nav-link mr-5 pr-5 text-white text-center" href="#">RCQ</button>
-                   </li>
-                   <li class="nav-item">
-                     <button class="btn btn-info border-0 nav-link mr-5 pr-5 text-white text-center" href="#">TFG</button>
-                   </li>
-                 </ul>
-               </div>
-             </nav>
-             <button class="btn btn-warning text-dark">Contato</button>
-     </div>
+    </nav>
+    <button class="btn btn-warning text-dark">Contato</button>
+  </div>
 
-     <!--CAPA DO SITE-->
-     <div class="coverSite row">
-          <div class="col-md-6 col-sm-12 container coverSiteImg d-flex">
-               <img src="img/image_1.jpg" alt="Imagem do site">
-          </div>
-          <div class="coverSitePhrase col-md-6 col-sm-12 d-flex">
-            <h1 class="text-left text-secondary p-2">
-              Conheça os principais indicadores de saúde para você ter uma melhor qualidade de vida
-            </h1>
-            <button class="btn btn-lg btn-primary mb-5 p-1" id="btnInfo">Clique para saber mais!</button>
-          </div>
-          
-     </div>
+  <!--CAPA DO SITE-->
+  <div class="coverSite row">
+    <div class="col-md-6 col-sm-12 container coverSiteImg d-flex">
+      <img src="img/image_1.jpg" alt="Imagem do site">
+    </div>
+    <div class="coverSitePhrase col-md-6 col-sm-12 d-flex">
+      <h1 class="text-left text-secondary p-2">
+        Conheça os principais indicadores de saúde para você ter uma melhor qualidade de vida
+      </h1>
+      <button class="btn btn-lg btn-primary mb-5 p-1" id="btnInfo">Clique para saber mais!</button>
+    </div>
+
+  </div>
 
 
-     <!--SERVIÇOS OFERECIDOS-->
-     <div class="centeredRow container services" id="services">
-        <div class="cardService centeredColumn mb-3 p-2 shadow">
-          <img class="mt-2" src="/img/diet.png" alt="Dieta">
-          <h5 class="mb-1 p-1 text-center text-secondary">Índice de Adiposidade Corporal (IAC)</h5>
-          <p class="mb-2 p-2 text-center text-secondary">
-            O índice de adiposidade corporal mede a quantidade de gordura no corpo. É um índice considerado
-            mais acurado que o IMC, pois leva em consideração apenas a altura e o comprimento do quadril, ou seja, 
-            não é uma medida afetada pelo peso do paciente
-          </p>
-          <button class="btn btn-primary mb-3 p-2 shadow text-white">Conheça seu IAC</button>
-        </div>
-        <div class="cardService centeredColumn mb-2 p-2 shadow">
-          <img class="mt-2" src="/img/weight.png" alt="Balança">
-          <h5 class="mb-1 p-1 text-center text-secondary">Índice de Massa Corporal (IMC)</h5>
-          <p class="mb-2 p-2 text-center text-secondary">
-            Criado há dois séculos, o IMC mede de maneira simples se uma pessoa está no seu peso ideal, 
-            utilizando para isso a altura e o peso da pessoa.<br/>Tem como desvantagem o fato de ser 
-            afetado por pesos ou altura muito elevadas
-          </p>
-          <button class="btn btn-primary mb-3 p-2 shadow text-white">Conheça seu IMC</button>
-        </div>
-        <div class="cardService centeredColumn mb-2 p-2 shadow">
-          <img class="mt-2" src="/img/kidney.png" alt="Balança">
-          <h5 class="mb-1 p-1 text-center text-secondary">Taxa de Filtração Glomerular (TFG)</h5>
-          <p class="mb-2 p-2 text-center text-secondary">
-            Mede o volume de líquido filtrado no interior da cápsula de Bowman. <br/>Por não sofrer reabsorção tubular, 
-            é frequentemente utilizado para medir a capacidade de filtração dos rins, indicando ou não a Doença Renal Crônica (DRC). 
-          </p>
-          <button class="btn btn-primary mb-3 p-2 shadow text-white">Conheça sua TFG</button>
-        </div>
-        <div class="cardService centeredColumn mb-2 p-2 shadow">
-          <img class="mt-2" src="/img/gordura.png" alt="Balança">
-          <h5 class="mb-1 p-1 text-center text-secondary">Relação Cintura/Quadril (RCQ)</h5>
-          <p class="mb-2 p-2 text-center text-secondary">
-            A relação cintura/quadril é obtida através do quociente entre a medida da cintura e a medida do quadril do paciente.
-            <br/>É considerado um bom índice porque estima a proporção de gordura visceral, prejudicial à saúde das pessoas. Os resultados
-            costumam variar de acordo com o sexo.
-          </p>
-          <button class="btn btn-primary mb-3 p-2 shadow text-white">Conheça sua RCQ</button>
-        </div>
-     </div>
+  <!--SERVIÇOS OFERECIDOS-->
+  <div class="centeredRow container services" id="services">
+    <div class="cardService centeredColumn mb-3 p-2 shadow">
+      <img class="mt-2" src="/img/diet.png" alt="Dieta">
+      <h5 class="mb-1 p-1 text-center text-secondary">Índice de Adiposidade Corporal (IAC)</h5>
+      <p class="mb-2 p-2 text-center text-secondary">
+        O índice de adiposidade corporal mede a quantidade de gordura no corpo. É um índice considerado
+        mais acurado que o IMC, pois leva em consideração apenas a altura e o comprimento do quadril, ou seja,
+        não é uma medida afetada pelo peso do paciente
+      </p>
+      <button class="btn btn-primary mb-3 p-2 shadow text-white">Conheça seu IAC</button>
+    </div>
+    <div class="cardService centeredColumn mb-2 p-2 shadow">
+      <img class="mt-2" src="/img/weight.png" alt="Balança">
+      <h5 class="mb-1 p-1 text-center text-secondary">Índice de Massa Corporal (IMC)</h5>
+      <p class="mb-2 p-2 text-center text-secondary">
+        Criado há dois séculos, o IMC mede de maneira simples se uma pessoa está no seu peso ideal,
+        utilizando para isso a altura e o peso da pessoa.<br />Tem como desvantagem o fato de ser
+        afetado por pesos ou altura muito elevadas
+      </p>
+      <button class="btn btn-primary mb-3 p-2 shadow text-white" id="btnIMCService">Conheça seu IMC</button>
+    </div>
+    <div class="cardService centeredColumn mb-2 p-2 shadow">
+      <img class="mt-2" src="/img/kidney.png" alt="Balança">
+      <h5 class="mb-1 p-1 text-center text-secondary">Taxa de Filtração Glomerular (TFG)</h5>
+      <p class="mb-2 p-2 text-center text-secondary">
+        Mede o volume de líquido filtrado no interior da cápsula de Bowman. <br />Por não sofrer reabsorção tubular,
+        é frequentemente utilizado para medir a capacidade de filtração dos rins, indicando ou não a Doença Renal
+        Crônica (DRC).
+      </p>
+      <button class="btn btn-primary mb-3 p-2 shadow text-white">Conheça sua TFG</button>
+    </div>
+    <div class="cardService centeredColumn mb-2 p-2 shadow">
+      <img class="mt-2" src="/img/gordura.png" alt="Balança">
+      <h5 class="mb-1 p-1 text-center text-secondary">Relação Cintura/Quadril (RCQ)</h5>
+      <p class="mb-2 p-2 text-center text-secondary">
+        A relação cintura/quadril é obtida através do quociente entre a medida da cintura e a medida do quadril do
+        paciente.
+        <br />É considerado um bom índice porque estima a proporção de gordura visceral, prejudicial à saúde das
+        pessoas. Os resultados
+        costumam variar de acordo com o sexo.
+      </p>
+      <button class="btn btn-primary mb-3 p-2 shadow text-white">Conheça sua RCQ</button>
+    </div>
+  </div>
 
-     <!--Janela de IMC-->
-     <div class="boxIMC col-lg-3 col-sm-12 container d-none p-3 shadow" id="imc">
+  <!--Janela de IMC-->
+    <div class="boxIMC col-lg-3 col-sm-6 container d-none p-3 shadow" id="imc">
       <i class="fa-solid fa-xmark text-secondary text-right" id="btnCloseIMC"></i>
       <h5 class="my-3 text-center text-secondary">Cálculo do IMC</h5>
       <input class="form-control mb-3" type="text" placeholder="Insira seu peso (kg)" id="weight">
       <input class="form-control mb-3" type="text" placeholder="Digite a sua altura (m)" id="height">
-      <button class="btn btn-block btn-success my-3" id="imcCalculate">Calcular IMC</button>
-        <input class="d-none form-control" type="text" id="imcResult">
-     </div>
+      <div class="gender">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="gender" id="masculino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="gender" id="feminino">
+      </div>
+      <button class="btn btn-block btn-success my-3" id="btnImcCalculate">Calcular IMC</button>
+      <button class="btn btn-outline-primary d-none btnNewIMC" id="btnNewIMC">Nova consulta</button>
+      <input class="d-none form-control imcResult text-center" type="text" id="imcResult" style="font-size: 24px;">
+    </div>
+  
+  <!--FORMULÁRIO-->
+  <div class="centeredColumn col-md-6 col-sm-12 contact mt-5 mx-auto shadow">
+    <h5 class="my-4 text-center text-secondary">Preencha os dados para receber nossas newletters</h5>
+    <input type="text" class="form-control mb-3" id="name" placeholder="Digite seu nome">
+    <input type="email" class="form-control mb-3" id="email" placeholder="Seu email principal">
+    <input class="form-control mb-3" type="tel" id="telephone" placeholder="(xx) 9xxxx-xxxx">
+    <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Sua mensagem aqui..."></textarea>
+    <button class="btn btn-primary my-2" id="btnFormSubmit">Enviar dados</button>
+  </div>
 
-     <!--RODAPÉ-->
-     <div class="container-fluid mt-5 siteFooter">
-        <div class="centeredRow midias">
-          <i class="fa-brands fa-facebook ml-3 mr-3 pt-3 text-white"></i>
-          <i class="fa-brands fa-twitter ml-3 mr-3 pt-3 text-white"></i>
-          <i class="fa-brands fa-instagram ml-3 mr-3 pt-3 text-white"></i>
-          <i class="fa-solid fa-envelope ml-3 mr-3 pt-3 text-white"></i>
-          <i class="fa-brands fa-whatsapp ml-3 mr-3 pt-3 text-white"></i>
-        </div>
-        
-     </div>
+
+  <!--RODAPÉ-->
+  <div class="container-fluid mt-5 siteFooter">
+    <div class="centeredRow midias">
+      <i class="fa-brands fa-facebook ml-3 mr-3 pt-3 text-white"></i>
+      <i class="fa-brands fa-twitter ml-3 mr-3 pt-3 text-white"></i>
+      <i class="fa-brands fa-instagram ml-3 mr-3 pt-3 text-white"></i>
+      <i class="fa-solid fa-envelope ml-3 mr-3 pt-3 text-white"></i>
+      <i class="fa-brands fa-whatsapp ml-3 mr-3 pt-3 text-white"></i>
+    </div>
+    <h6 class="my-2 text-center text-white">&copy; Todos os direitos reservados - 2022</h6>
+    <h6 class="my-2 text-center text-white">Desenvolvido por <a class="text-white" href="">Daniel Vitorio</a></h6>
+  </div>
 
 
 
-     <!--JAVASCRIPT-->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-     <script src="js/imc.js" defer></script>
+  <!--JAVASCRIPT-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="js/imc.js" defer></script>
 </body>
+
 </html>
