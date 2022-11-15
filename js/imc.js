@@ -29,8 +29,6 @@ btnCloseIMC.onclick = ()=>{
 btnImcCalculate.onclick = ()=>{
      let imcResult = (parseFloat(weight.value) / (parseFloat(height.value) * parseFloat(height.value)));
      document.getElementById('btnNewIMC').classList.remove('d-none');
-     document.getElementById('imageIMCResults').classList.remove('d-none');
-     document.getElementById('imcResults').classList.remove('d-none');
      document.getElementById('imcResult').classList.remove('d-none');
      document.getElementById('imcResult').value = imcResult.toFixed(2);
 }
