@@ -5,11 +5,8 @@ const btnIMC = document.getElementById('btnIMC');
 const btnImcCalculate = document.getElementById('btnImcCalculate');
 const btnIMCService = document.getElementById('btnIMCService');
 const height = document.getElementById('height');
-const imageIMCResults = document.getElementById('imageIMCResults');
 const imc = document.getElementById('imc');
-const imcResults = document.getElementById('imcResults');
 const imcResult = document.getElementById('imcResult');
-const newIMC = document.getElementById('btnNewSearch');
 const weight = document.getElementById('weight');
 
 //OPEN IMC SCREEN
@@ -38,6 +35,5 @@ btnNewIMC.onclick = ()=>{
      document.getElementById('weight').value = "";
      document.getElementById('height').value = "";
      document.getElementById('imcResult').value = "";
-     document.getElementById('btnNewSearch').value = "";
 }
 
